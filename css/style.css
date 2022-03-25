@@ -12,6 +12,51 @@
 * ======================================================= */
 /* (((((((((((((((((((((((((NAVBAR))))))))))))))))))))))))) */
 
+.nav {
+  /* border:1px solid transparent; */
+    position:fixed; 
+    z-index: 1100;
+    width: 100%;
+    top: 0;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  /* max-width: 960px; */
+  /* mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%); */
+  margin: 0 auto;
+  /* padding: 60px 0; */
+}
+
+.nav ul {
+  text-align: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.nav ul li {
+  display: inline-block;
+}
+
+.nav ul li a {
+  padding: 18px;
+  font-family: "Open Sans";
+  text-transform:uppercase;
+  color: rgba(0, 5, 19, 0.925);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
 /* {{{{{{{{{{{{{{{{{{{{{{{{{{{{NAVBAR END}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
 body {
   font-family: "Space Mono", Arial, serif;
@@ -89,6 +134,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-header,
 .fh5co-cover {
+  margin-top: 100px;
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
@@ -337,8 +383,18 @@ h1, h2, h3, h4, h5, h6, figure {
 .info li:first-child {
   padding-top: 0;
 }
+/* {{{{{{FULL NAME}}}}}} */
+.first-blocks{
+  width: 33%;
+  /* border:1px solid black; */
+  display: inline-block;
+  /* float: left; */
+  color: #000;
+  font-weight: bold;
+}
 .info li .first-block {
-  width: 40%;
+  width: 25%;
+  /* border:1px solid black; */
   display: inline-block;
   /* float: left; */
   color: #000;
@@ -346,15 +402,27 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .info li .second-block {
   width: 60%;
+  /* border:1px solid black;  */
   display: inline-block;
   color: rgba(0, 0, 0, 0.5);
 }
-
+/* {{{{{ADD}}}}} */
+.info li .second-blocks {
+  width:75%;
+  /* border:1px solid black;  */
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5);
+}
 .fh5co-social-icons {
   margin: 0;
   padding: 0;
+  /* width: 220px; */
+  /* border: 1px solid rgb(116, 115, 115); */
 }
 .fh5co-social-icons li {
+  
+  /* border: 1px solid black;
+  font-size: 55px; */
   margin: 0;
   padding: 0;
   list-style: none;
