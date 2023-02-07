@@ -13,6 +13,7 @@
 /* (((((((((((((((((((((((((NAVBAR))))))))))))))))))))))))) */
 
 .nav {
+  display: block;
   /* border:1px solid transparent; */
     position:fixed; 
     z-index: 1100;
@@ -26,7 +27,7 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 auto;
-  /* padding: 60px 0; */
+    /* padding: 60px 0; */
 }
 
 .nav ul {
@@ -93,13 +94,13 @@ body {
 }
 
 a {
-  color: #FF9000;
+  color: rgba(112, 59, 59, 0.9);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #FF9000;
+  color: rgba(112, 59, 59, 0.9);
   outline: none;
   text-decoration: none;
 }
@@ -117,17 +118,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
 }
 
 ::selection {
   color: #fff;
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
 }
 
 #fh5co-header,
@@ -147,7 +148,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 144, 0, 0.9);
+  background: rgba(112, 59, 59, 0.9);
 }
 #fh5co-header .display-t,
 .fh5co-cover .display-t {
@@ -269,7 +270,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-features {
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
 }
 #fh5co-features h2 {
   color: #fff;
@@ -304,7 +305,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #FF9000 !important;
+  color: rgba(112, 59, 59, 0.9) !important;
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -355,7 +356,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #FF9000;
+  background: rgba(112, 51, 51, 0.9);
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -434,7 +435,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #FF9000;
+  color: rgba(112, 59, 59, 0.9);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -471,7 +472,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
 }
 
 .fh5co-heading {
@@ -601,7 +602,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #FF9000;
+  background-color: rgba(112, 59, 59, 0.9);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
@@ -870,7 +871,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #FF9000;
+  color: rgba(112, 59, 59, 0.9);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1180,9 +1181,9 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
   color: #fff;
-  border: 2px solid #FF9000;
+  border: 2px solid rgba(112, 59, 59, 0.9);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #ff9b1a !important;
@@ -1190,11 +1191,11 @@ input[type="text"] {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #FF9000;
-  border: 2px solid #FF9000;
+  color: rgba(112, 59, 59, 0.9);
+  border: 2px solid rgba(112, 59, 59, 0.9);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #FF9000;
+  background: rgba(112, 59, 59, 0.9);
   color: #fff;
 }
 
@@ -1324,7 +1325,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #FF9000;
+  border-color: rgba(112, 59, 59, 0.9);
 }
 
 .row-pb-md {
@@ -1488,4 +1489,42 @@ background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
 .fill:hover::after {
   top: 0px;
   left: 0px;
+}
+
+.hamburger {
+  display: none;
+  cursor: context-menu;
+  color: #f12711;  /* fallback for old browsers */
+color: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+color: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.line {
+  width: 28px;
+  height: 4px;
+  border-radius: 30px;
+  background-color: rgb(49, 38, 38);
+  margin: 6px 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.links a {
+  color: rgb(49, 48, 48);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
 }
